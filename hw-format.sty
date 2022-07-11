@@ -1,0 +1,50 @@
+\RequirePackage[margin=1.0in]{geometry}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+\RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
+\RequirePackage{float}
+\RequirePackage[utf8]{inputenc}
+
+\pgfplotsset{compat = 1.18}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+
+\cfoot{Page \thepage\enspace of \pageref{LastPage}}
+
+\newcommand{\titlespace}{0.3em} % For spacing between the items in the title
+
+\renewcommand\qedsymbol{$\blacksquare$}
+
+% For short forms for vectors 
+\newcommand{\vectu}{\ensuremath{\mathbf{u}}}
+\newcommand{\vectv}{\ensuremath{\mathbf{v}}}
+\newcommand{\vecti}{\ensuremath{\mathbf{i}}}
+\newcommand{\vectj}{\ensuremath{\mathbf{j}}}
+\newcommand{\vectk}{\ensuremath{\mathbf{k}}}
+\newcommand{\vecte}{\ensuremath{\mathbf{e}}}
+\newcommand{\vectx}{\ensuremath{\mathbf{x}}}
+
+% Degree symbol
+\newcommand{\degcirc}{\ensuremath{^\circ}}
+
+% Linear algebra symbols
+\DeclareMathOperator{\Col}{Col}
+\DeclareMathOperator{\Null}{Null}
+\DeclareMathOperator{\Span}{Span}
+
+\newcommand{\printtitle}[4]{
+    % Code to generate a title
+    \begin{center}
+        \large
+        #1 \par \vspace{\titlespace}
+        #2 \par \vspace{\titlespace}
+        #3 \par \vspace{\titlespace}
+        #4
+    \end{center}
+}
